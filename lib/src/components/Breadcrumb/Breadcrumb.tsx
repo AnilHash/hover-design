@@ -1,20 +1,10 @@
 import React, { forwardRef } from "react";
+import { BreadcrumbProps } from "./breadcrumb.types";
 import {
   breadcrumbWrapper,
   crumbSeparator,
   crumbTitle,
 } from "./breadcrumb.css";
-
-type crumb = {
-  title: string;
-  href?: string;
-};
-
-export interface BreadcrumbProps {
-  crumbs: Array<crumb>;
-  separator?: string | React.ReactNode;
-  className?: string;
-}
 
 const Breadcrumb: React.ForwardRefRenderFunction<
   HTMLDivElement,
